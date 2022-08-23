@@ -1,0 +1,36 @@
+{
+  "version": "1.0",
+  "defaultSchema": "custom_csv",
+  "schemas": [
+    {
+      "name": "custom_csv",
+      "type": "custom",
+      "factory": "org.apache.calcite.adapter.csv.CsvSchemaFactory",
+      "operand": {
+        "directory": "/Users/blz/IdeaProjects/calcite-study/src/main/resources/csv"
+      }
+    }
+    //  ,
+    //    {
+    //      "name": "TEST_MEM",
+    //      "type": "custom",
+    //      "factory": "com.calcite.memory.MemSchemaFactory",
+    //      "operand": {
+    //        "MEM_TABLE_1": [
+    //          {
+    //            "ID": 0,
+    //            "MEM_STR": "str0"
+    //          },
+    //          {
+    //            "ID": 1,
+    //            "MEM_STR": "str1"
+    //          },
+    //          {
+    //           CUSTOM_CSV "ID": 2,
+    //            "MEM_STR": "str2"
+    //          }
+    //        ]
+    //      }
+    //    }
+  ]
+}
